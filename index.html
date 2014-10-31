@@ -14,17 +14,23 @@
     <section>
       <p>
      Guess a number and type it in the box below:<br>
-        <input type="text" name="inputbox"><br>
+        <input id="input-box" type="text" placeholder="Type Number 1-100" onkeydown="if (event.keyCode === 13) { AnalyzeEnteredGuess() }"<br>
 
-       <button type="button">Check the number</button><br><br>
-      <button type="button">Give up! Take me to youtube</button>
-        <button type="button">Show me the number</button></button>
+       <button type="button" onclick="AnalyzeEnteredGuess()">Check the number</button>
+       <br>
+       <br>
+       <button type="button" onclick="RestartGameFunction()">Restart Game</button>
+        <button id="show_button" type="button" onclick="ShowNumberFunction()"> Show me the number</button>
       </p>
+         <h3 id="remaining-guesses">7 Guesses Remaining</h3>
+         <h4 id="list-of-guesses"></h3>
     </section>
 
     <footer>
         <p>&copy; 2014 Arcadius Kazimierski</p>
     </footer>
-  </body>
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="arcadius.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>
