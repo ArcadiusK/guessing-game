@@ -17,7 +17,7 @@ window.AnalyzeEnteredGuess=function(){
 		if (user_guess == number_to_be_guessed) {
 			document.getElementById("list-of-guesses").innerHTML=
 					document.getElementById("list-of-guesses").innerHTML+ "<br>"+user_guess;
-			document.getElementById("remaining-guesses").innerHTML="Congratulations you won! You're right the number is: "+user_guess+"Play Again!";
+			document.getElementById("remaining-guesses").innerHTML="Congratulations you won! You're right the number is: "+user_guess+". Play Again!";
 		$("body").css("background-color","yellow");
 		}
 		else
